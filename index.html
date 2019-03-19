@@ -27,6 +27,8 @@
 	
 	jQuery(document).on("ready",function(){
 
+	LDB.createDatabase();
+	
 	LDB.executeQuery("select * from login_user_info where property = 'login_status' AND value = '1'", function(inpObj){
 
 		var opAra = LDB.selectObj2Obj(inpObj,"property");
