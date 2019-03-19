@@ -30,6 +30,7 @@
 	LDB.executeQuery("select * from login_user_info where property = 'login_status' AND value = '1'", function(inpObj){
 
 		var opAra = LDB.selectObj2Obj(inpObj,"property");
+		alert(opAra);
 		if(Object.keys(opAra).length === 0)
 		{
 			window.location.replace("files_non_auth/login.html");
