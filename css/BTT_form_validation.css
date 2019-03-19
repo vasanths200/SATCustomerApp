@@ -1,0 +1,53 @@
+[btt_form_vald_id] .red_box 
+{
+ border: 1px solid #a94442 !important;
+}
+
+[btt_form_vald_id] .green_box
+{
+ border: 1px solid #00ff00 !important;
+}
+
+[btt_form_vald_id] .blue_box
+{
+ border: 1px solid #0000ff !important;
+}
+
+[btt_form_vald_id] small.BTT_val_error_space
+{
+     position: absolute;
+    color: #fff;
+    margin-top: 4px !important;
+    padding: 5px 10px;
+    clear: both;
+    background: #872642;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+[btt_form_vald_id] .btt_req_star:after {
+    content: "*";
+    color: red;
+}
+
+[btt_form_vald_id] small.BTT_val_error_space::before
+{
+	content: "";
+    position: absolute;
+    top: -10px;
+    center: 2px;
+    border: 6px solid transparent;
+    border-bottom-color: #872642;
+}
+
+[btt_validate*="money"]
+{
+	background:#fff url(../webroot/img/btt_rs.png) no-repeat 2% !important;
+	background-size: 23px !important;
+}
+
+[btt_validate*="mobile"]
+{
+	background:#fff url(../webroot/img/btt_mobile.png) no-repeat 98% !important;
+	background-size: 23px !important;
+}

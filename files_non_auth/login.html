@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="../css/BTT_form_validation.css">
+
+
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" charset="utf-8"></script>
+	
+<script src="../js/localDB.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/BTT_form_validation.js"></script>
+<style type="text/css">
+:root{
+    --color_0: #000;
+    --color_1: #fff;
+    --color_2: #00b8f0;
+    --color_3: #10bdf0;
+}
+
+.form-bg{
+    background: #e4e6e6;margin:0 auto;padding:50px;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width:767px) {
+.containterwidth{
+ position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+}
+.form-horizontal .header{
+   background: #00b8f0;
+  background: url("../img/bg.png") repeat; /* fallback */
+  
+    padding: 30px 25px;
+    font-size: 30px;
+    color: #fff;
+    /* text-align: center; */
+    text-transform: uppercase;
+    border-radius: 3px 3px 0 0;
+}
+.form-horizontal .heading{
+    font-size: 20px;
+    color: #777;
+    margin: 10px 0 20px 0;
+    text-transform: uppercase;
+}
+.form-horizontal .form-content{
+    padding: 25px;
+    background: #fff;
+}
+.form-horizontal .form-control{
+    padding: 12px 16px 12px 39px;
+    height: 50px;
+    font-size: 14px;
+    color: #2b2a2a;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.form-horizontal .form-control:focus{
+    border-color: #2655c1;
+    box-shadow: none;
+}
+.form-horizontal .control-label{
+    font-size: 17px;
+    color: #286090;
+    position: absolute;
+    top: 5px;
+    left: 27px;
+    text-align: center;
+}
+@media (max-width:767px) {
+	.form-horizontal .control-label{
+    font-size: 17px;
+    color: #286090;
+    position: relative!important;
+    top: 5px;
+    left: 27px;
+    text-align: center;
+}
+.form-horizontal .form-control{
+    padding: 12px 16px 12px 10px;
+}
+.form-horizontal .form-content{
+    padding: 10px;
+    }
+    .containterwidth { margin-top:10px;}
+}
+@media (max-width:570px) {
+.form-horizontal .form-content {
+    padding: 25px 25px 25px;
+    background: #fff;
+}
+}
+.form-horizontal textarea.form-control{
+    resize: vertical;
+    height: 130px;
+}
+.form-horizontal .btn{
+    font-size: 18px;
+    color: #4e4e4e;
+    float: right;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 0;
+    padding: 10px 25px;
+    transition: all 0.5s ease 0s;
+}
+.btnmk{background: linear-gradient(135deg,var(--color_2),var(--color_3),var(--color_2),var(--color_3));color: var(--color_1) !important;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);}
+.form-horizontal .btn:hover{
+    background: #fff;
+    border-color: #10bdf0;color:#000 !important;
+}
+.col-sm-6{float:left;}
+.col-md-offset-2.col-md-6 {
+
+    margin: 0 auto;
+
+}
+body {
+background: url("../img/bg_w3.png") repeat; /* fallback */
+  /* background: url(https://i.imgsafe.org/181dc1e08e.jpg) top right no-repeat; 
+  background-attachment: fixed;
+  background: #c3c3c3; */
+}
+
+
+.mainOuter {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middleCenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.innerCenter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /*whatever width you want*/
+}
+
+</style>
+</head>
+
+<body class='mainOuter'>
+
+    <div class="middleCenter">
+    <div class="container containterwidth">
+        <div class="row">
+            <div class="col-sm-offset-2  col-sm-8 col-md-offset-3 col-md-6">
+                <form method="post" id="login_screen_form" autocomplete="off" class="form-horizontal"><div><img src="../img/logo.jpg" style="width:100px; height:100px;    
+    border: 10px solid #fff;
+    margin: 0px auto; 
+    position: absolute;    
+    right: 15px;
+    top: 10px;"/></div>
+					<div class="header">Login </div>
+                    <div class="form-content form_group" row_count="0">
+                          <div class="form-group">
+                             <div class="col-sm-12">
+                                <input class="form-control" data-mmd="users[mobile]" type="text" btt_validate="req-text" placeholder="User Name">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        
+                       
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input class="form-control" data-mmd="users[password]" type="password" btt_validate="req-text" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        
+                      
+                    
+                        <div class="clearfix">
+                            <div class="col-sm-8">
+                                <label class="control-label-small" style="margin-top: 25px;"><a href="#">Forgot Password </a>/<a href="#"> Registration</a></label>
+                                
+                            </div> <div class="col-sm-4"><button type="submit" class="btn btn-default btnmk"> Login</button></div>
+                        </div>
+                         <div class="form-group pull-right">
+                            
+ 
+                           
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+	<script>
+
+		$("form#login_screen_form").BTT_form_validate({
+			"pattern":{
+				"morethan_pre_valint":function(tObj)
+				{
+					var toRet = false;
+					var preval = typeof($(tObj).attr("previous_valueint")) == "undefined"?0:retNumber($(tObj).attr("previous_valueint"));
+					var tsVal = retNumber(tObj.val());
+								
+					if(tsVal <= preval)
+					{
+						toRet = "Value less than Pre value ("+preval+").";
+					}
+
+					return toRet;
+				},
+				"date_within_this_month":function(tObj)
+				{
+					var toRet = false;
+										
+					var tsVal = tObj.val().split("/");
+						slMnt = parseFloat(tsVal[1]);
+						
+					var dte = new Date();	
+					var mnt = parseFloat(dte.getMonth() + 1);
+					
+					if(slMnt != mnt) toRet = "Select  a date within current month.";	
+
+					return toRet;
+				},
+				"password_confirm":function(tObj)
+				{ 				
+				
+					var splt = $(tObj).attr("check_with").split("|"),
+						cmVal = $(tObj).closest(".form_group").find("["+splt[0]+"='"+splt[1]+"'"+"]").val();
+						
+				if(tObj.val() ==  cmVal)
+				return false;
+				else
+				return "Password Mismatch"; 				
+			}},
+			"cb_after":function(pop_form){  preSaveVal(pop_form);  return false; }});
+			
+	</script>
+</body>
+</html>

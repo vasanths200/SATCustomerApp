@@ -1,0 +1,46 @@
+<html lang="en-US" ><head>
+<meta name="saravanatrack_calltaxi">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="Call taxi at erode, Saravana Track Call Taxi Erode">
+<meta property="og:description" content="Call taxi at erode, Saravana Track Call Taxi Erode. Pasanger call taxi booking app Erode">
+<meta name="description" content="Call taxi at erode, Saravana Track Call Taxi Erode. Pasanger call taxi booking app Erode">
+<meta name="keywords" content="Call taxi at erode, Saravana Track Call Taxi Erode. Pasanger call taxi booking app Erode">
+
+<meta property="og:site_name" content="Saravana Track Call Taxi Erode">
+<meta property="article:tag" content="Saravana Track">
+<meta property="article:tag" content="Call Taxi Erode">
+<meta property="article:tag" content="Calltaxi Erode">
+
+
+<script type="text/javascript" src="js/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="js/localDB.js?ver=1.12.4"></script>
+
+</head>
+
+<body >
+
+	<script>
+	
+	jQuery(document).on("ready",function(){
+
+	LDB.executeQuery("select * from login_user_info where property = 'login_status' AND value = '1'", function(inpObj){
+
+		var opAra = LDB.selectObj2Obj(inpObj,"property");
+		if(Object.keys(opAra).length === 0)
+		{
+			window.location.replace("files_non_auth/login.html");
+		}
+		else
+		{
+			window.location.replace("files_auth/taxi_bookings.html");
+		}	
+	});	
+	
+	});
+
+	</script>
+	
+</body>
+</html>
