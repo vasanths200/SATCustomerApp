@@ -14,6 +14,9 @@
 	<plugin name="cordova-sqlite-storage" source="npm" />
 	<plugin name="cordova-unique-device-id" source="npm" /> -->
 	
+	<plugin name="cordova-sqlite-storage" source="npm" />
+	<plugin name="cordova-unique-device-id" source="npm" />
+	
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
