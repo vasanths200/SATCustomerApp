@@ -14,6 +14,15 @@
 	<plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
 	
 	
+	<feature name="Geolocation">
+		<param name="ios-package" value="CDVLocation" />
+	</feature>
+	
+	<feature name="Geolocation">
+		<param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+	</feature>
+	
+	
 	
 	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
 		<string>need location access to reach you and serve you</string>
