@@ -59,7 +59,7 @@ var page = path[0].split("/").pop();
 	
 	function onNewLocation(position)
 	{ 
-		alert(position.coords.latitude+' -- '+position.coords.longitude);
+		alert(position.coords.latitude+' -ZXZ- '+position.coords.longitude);
 	}
 	
 function preSaveVal(fObj)
