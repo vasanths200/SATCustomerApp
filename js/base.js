@@ -53,6 +53,7 @@ var page = path[0].split("/").pop();
 		alert(divId);				
 		
 		var watchId = navigator.geolocation.watchPosition(onNewLocation);
+		alert(watchId);				
     }
 	
 	function onNewLocation(position)
