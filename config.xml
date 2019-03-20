@@ -13,6 +13,12 @@
 	<!-- <plugin name="org.apache.cordova.geolocation" spec="^0.3.6" /> -->
 	<plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
 	
+	
+	
+	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+		<string>need location access to reach you and serve you</string>
+	</edit-config>
+	
 <!--    <plugin name="cordova-sqlite-storage" spec="3.2.0" />
 	
 	<preference name="phonegap-version" value="cli-8.1.1" />  -->
