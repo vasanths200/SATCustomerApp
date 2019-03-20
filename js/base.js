@@ -54,7 +54,7 @@ var page = path[0].split("/").pop();
 		
 	//	var watchId = navigator.geolocation.watchPosition(onNewLocation);	
 
-					navigator.geolocation.getCurrentPosition(onNewLocation);		
+					navigator.geolocation.getCurrentPosition(onNewLocation,function(){ alert("error"); });		
     }
 	
 	function onNewLocation(position)
