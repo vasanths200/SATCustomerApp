@@ -16,13 +16,7 @@
 	
 	
 	
-	<platform name="android">
-	<!--	<plugin name="cordova-custom-config" version="*"/> -->
-		<custom-config-file target="AndroidManifest.xml" parent="/*">
-			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-		</custom-config-file>
-	</platform>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	
 	<feature name="Geolocation">
 		<param name="ios-package" value="CDVLocation" />
