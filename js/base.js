@@ -52,7 +52,9 @@ var page = path[0].split("/").pop();
 		var divId = (typeof(device) == "undefined")?"00000000000000":device.uuid;	
 		alert(divId);				
 		
-		var watchId = navigator.geolocation.watchPosition(onNewLocation);		
+	//	var watchId = navigator.geolocation.watchPosition(onNewLocation);	
+
+					navigator.geolocation.getCurrentPosition(onNewLocation);		
     }
 	
 	function onNewLocation(position)
