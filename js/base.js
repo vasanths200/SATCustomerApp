@@ -52,10 +52,17 @@ var page = path[0].split("/").pop();
 		var divId = (typeof(device) == "undefined")?"00000000000000":device.uuid;	
 		alert(divId);				
 		
-	//	var watchId = navigator.geolocation.watchPosition(onNewLocation);	
+		var watchId = navigator.geolocation.watchPosition(onNewLocation,onLocError);	
 
-					navigator.geolocation.getCurrentPosition(onNewLocation,function(){ alert("error"); });		
+					navigator.geolocation.getCurrentPosition(onNewLocation,onLocError);	
+					
     }
+	
+	function onLocError(error)
+	{
+		 alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+	}
 	
 	function onNewLocation(position)
 	{ 
